@@ -25,7 +25,7 @@ const dracoLoader = new DRACOLoader();
 dracoLoader.setDecoderPath("/draco/"); // چون در static/draco هست
 gltfLoader.setDRACOLoader(dracoLoader);
 
-gltfLoader.load("/models/gltf/shoej.gltf", (gltf) => {
+gltfLoader.load("/models/glb/shoej.glb", (gltf) => {
   model = gltf.scene;
   console.log(model);
   model.scale.set(0.5, 0.5, 0.5);
