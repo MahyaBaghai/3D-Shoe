@@ -12,7 +12,7 @@ const sc = new THREE.Scene();
 const gui = new GUI({ title: "shoe controls" });
 
 // HDR environment
-new HDRLoader().load("/env/2k.hdr", (env) => {
+new HDRLoader().load("/3D-Shoe/env/2k.hdr", (env) => {
   env.mapping = THREE.EquirectangularReflectionMapping;
   env.colorSpace = THREE.SRGBColorSpace;
   sc.environment = env;
@@ -22,10 +22,10 @@ new HDRLoader().load("/env/2k.hdr", (env) => {
 let model = null;
 const gltfLoader = new GLTFLoader();
 const dracoLoader = new DRACOLoader();
-dracoLoader.setDecoderPath("/draco/"); // چون در static/draco هست
+dracoLoader.setDecoderPath("/3D-Shoe/draco/"); // چون در static/draco هست
 gltfLoader.setDRACOLoader(dracoLoader);
 
-gltfLoader.load("/models/glb/shoej.glb", (gltf) => {
+gltfLoader.load("/3D-Shoe/models/glb/shoej.glb", (gltf) => {
   model = gltf.scene;
   console.log(model);
   model.scale.set(0.5, 0.5, 0.5);
