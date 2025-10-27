@@ -1,7 +1,5 @@
-# Node dependencies
+# Node
 node_modules/
-
-# Build output
 dist/
 build/
 
@@ -11,19 +9,15 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Editor directories and files
+# Editors
 .vscode/
 .idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
 *.sw?
 
-# OS generated files
+# OS
 .DS_Store
 Thumbs.db
 
-# Env files (اگر داری)
+# Env
 .env
 .env.local
