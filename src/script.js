@@ -32,27 +32,26 @@ gltfLoader.load("/3D-Shoe/models/glb/shoej.glb", (gltf) => {
   model.position.y = -0.5;
   sc.add(model);
 
-  model.children[0].material.color.set("#40A999"); //دوخت دور نزدیک به کفی کفش
-  model.children[1].material.color.set("#40A999"); //جای بند پشت کفش مربعی
-  model.children[2].material.color.set("#fff"); //لژ کفش
-  model.children[3].material.color.set("#fff"); //تیک روی کفش
-  model.children[4].material.color.set("#40A999"); // بدنه دور کفش
-  model.children[5].material.color.set("#40A999"); //یه تیکه از بغل تا روی کفش
+  model.children[0].material.color.set("#40A999"); 
+  model.children[1].material.color.set("#40A999"); 
+  model.children[2].material.color.set("#fff"); 
+  model.children[3].material.color.set("#fff"); 
+  model.children[4].material.color.set("#40A999"); 
+  model.children[5].material.color.set("#40A999"); 
   model.children[18].material.color.set("#40A999");
-  model.children[6].material.color.set("#40A999"); // نوای بالای کفش
-  model.children[7].material.color.set("#fff"); //یه تیکه از روی کفش کنار بندها
+  model.children[6].material.color.set("#40A999"); 
+  model.children[7].material.color.set("#fff"); 
   model.children[19].material.color.set("#fff");
-  model.children[8].material.color.set("#40A999"); //مارک هک شده و دور مچ
-  model.children[11].material.color.set("#fff"); // بدنه داخل کفش
-  model.children[15].material.color.set("#40A999"); //داخلی کفش که دیده نمیشه فقط یک سایه روی کفی میندازه
-  model.children[17].material.color.set("#40A999"); //مارک روی کفش بالای بندها
-  model.children[20].material.color.set("#000"); //کفی داخل کفش
-  model.children[21].material.color.set("#40A999"); //کفی بیرونی
+  model.children[8].material.color.set("#40A999"); 
+  model.children[11].material.color.set("#fff"); 
+  model.children[15].material.color.set("#40A999");
+  model.children[17].material.color.set("#40A999");
+  model.children[20].material.color.set("#000"); 
+  model.children[21].material.color.set("#40A999"); 
   model.children[9].material.color.set("#40A999");
 
   let btn1 = document.querySelector(".btn--green");
   btn1.addEventListener("click", () => {
-    document.body.style.background = "#c6f5ee";
     model.children[0].material.color.set("#40A999");
     model.children[1].material.color.set("#40A999");
     model.children[2].material.color.set("#fff");
@@ -74,7 +73,6 @@ gltfLoader.load("/3D-Shoe/models/glb/shoej.glb", (gltf) => {
 
   let btn2 = document.querySelector(".btn--purple");
   btn2.addEventListener("click", () => {
-    document.body.style.background = "#dcbeff";
     model.children[0].material.color.set("#6800e2");
     model.children[1].material.color.set("#6800e2");
     model.children[2].material.color.set("#fff");
@@ -96,7 +94,6 @@ gltfLoader.load("/3D-Shoe/models/glb/shoej.glb", (gltf) => {
 
   let btn3 = document.querySelector(".btn--red");
   btn3.addEventListener("click", () => {
-    document.body.style.background = "#ffcfd5";
     model.children[0].material.color.set("#880d1e");
     model.children[1].material.color.set("#880d1e");
     model.children[2].material.color.set("#fff");
@@ -118,7 +115,6 @@ gltfLoader.load("/3D-Shoe/models/glb/shoej.glb", (gltf) => {
 
   let btn4 = document.querySelector(".btn--blue");
   btn4.addEventListener("click", () => {
-    document.body.style.background = "#899df8";
     model.children[0].material.color.set("#072AC8"); 
     model.children[1].material.color.set("#072AC8"); 
     model.children[2].material.color.set("#fff"); 
@@ -140,7 +136,6 @@ gltfLoader.load("/3D-Shoe/models/glb/shoej.glb", (gltf) => {
 
   let btn5 = document.querySelector(".btn--orange");
   btn5.addEventListener("click", () => {
-    document.body.style.background = "#f0c096";
     model.children[0].material.color.set("#a54e02"); 
     model.children[1].material.color.set("#a54e02"); 
     model.children[2].material.color.set("#fff"); 
